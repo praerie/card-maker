@@ -39,6 +39,8 @@ def printCard(suit_input, rank_input):
             rank = 'Q'
         elif rank_value == 13:
             rank = 'K'
+        elif rank_value == 14 or race_value == 1:
+            rank = 'A'
         else:
             rank = 'A' 
     except ValueError:
