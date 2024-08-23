@@ -33,6 +33,12 @@ def printCard(suit_input, rank_input):
         rank_value = int(rank_input)
         if 2 <= rank_value <= 10:
             rank = rank_input
+        elif rank_value == 11:
+            rank = 'J'
+        elif rank_value == 12:
+            rank = 'Q'
+        elif rank_value == 13:
+            rank = 'K'
         else:
             rank = 'A' 
     except ValueError:
